@@ -1,0 +1,12 @@
+* {
+    display: none;
+}
+html, body, #lightbox, #outerImageContainer, #imageContainer, #lightboxImage {
+    background: none;
+    display: block;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+}

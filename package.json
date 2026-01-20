@@ -1,0 +1,24 @@
+{
+  "name": "grupogurdjieff-cl",
+  "version": "1.0.0",
+  "description": "Sitio web del Grupo Gurdjieff - Santiago de Chile",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy . --project-name=grupogurdjieff-cl",
+    "serve": "python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuchurex/grupogurdjieff.cl"
+  },
+  "keywords": [
+    "gurdjieff",
+    "cuarto-camino",
+    "cloudflare-pages"
+  ],
+  "author": "chuchurex",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
