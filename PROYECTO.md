@@ -71,12 +71,17 @@ El sitio presenta información sobre:
 ### Desarrollo Local
 
 ```bash
-# Opción 1: Script incluido
+# Opción 1: npm (recomendado)
+npm run dev
+
+# Opción 2: Script incluido
 ./serve.sh
 
-# Opción 2: Python
-python3 -m http.server 8000
+# Opción 3: Python directo
+python3 -m http.server 4016
 ```
+
+Abre http://localhost:4016
 
 ### Despliegue
 

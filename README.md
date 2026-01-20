@@ -67,19 +67,25 @@ Para probar el sitio localmente, puedes usar cualquier servidor web simple:
 
 ```bash
 # Python 3
-python -m http.server 8000
+python -m http.server 4016
 
 # Python 2
-python -m SimpleHTTPServer 8000
+python -m SimpleHTTPServer 4016
 ```
 
 ### Usando Node.js:
 
 ```bash
-npx http-server -p 8000
+npx http-server -p 4016
 ```
 
-Luego abre http://localhost:8000 en tu navegador.
+### Usando npm:
+
+```bash
+npm run dev
+```
+
+Luego abre http://localhost:4016 en tu navegador.
 
 ## Tecnologías Utilizadas
 

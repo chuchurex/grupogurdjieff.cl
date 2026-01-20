@@ -3,7 +3,7 @@
 # Script para servir el sitio localmente
 # Uso: ./serve.sh [puerto]
 
-PORT=${1:-8000}
+PORT=${1:-4016}
 
 echo "======================================"
 echo "Grupo Gurdjieff - Servidor Local"
