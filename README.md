@@ -33,42 +33,12 @@ grupogurdjieff.cl/
 │   └── lightbox.js
 ├── images/              # Imágenes del sitio
 ├── .env.example         # Ejemplo de variables de entorno
-├── wrangler.toml        # Configuración de Cloudflare
 └── README.md            # Este archivo
 ```
 
 ## Configuración
 
-### 1. Variables de Entorno
-
-Copia el archivo `.env.example` a `.env` y completa las variables:
-
-```bash
-cp .env.example .env
-```
-
-Edita `.env` con tus credenciales de Cloudflare:
-
-- `CLOUDFLARE_ACCOUNT_ID`: ID de tu cuenta de Cloudflare
-- `CLOUDFLARE_API_TOKEN`: Token de API de Cloudflare
-
-**Obtener credenciales:**
-
-1. Account ID: https://dash.cloudflare.com > Account Home > Account ID
-2. API Token: https://dash.cloudflare.com > My Profile > API Tokens > Create Token
-   - Usa el template "Edit Cloudflare Workers"
-
-### 2. Instalación de Wrangler (CLI de Cloudflare)
-
-```bash
-npm install -g wrangler
-```
-
-### 3. Autenticación con Cloudflare
-
-```bash
-wrangler login
-```
+Para sitios estáticos en Cloudflare Pages no se requiere configuración adicional. Simplemente conecta el repositorio de GitHub a Cloudflare Pages.
 
 ## Despliegue
 
@@ -88,12 +58,6 @@ wrangler login
    - Custom domains > Set up a custom domain
    - Agrega: `grupogurdjieff.chuchurex.cl`
 
-### Despliegue Manual
-
-```bash
-# Desplegar a Cloudflare Pages
-wrangler pages deploy . --project-name=grupogurdjieff-cl
-```
 
 ## Desarrollo Local
 
@@ -113,12 +77,6 @@ python -m SimpleHTTPServer 8000
 
 ```bash
 npx http-server -p 8000
-```
-
-### Usando Wrangler:
-
-```bash
-wrangler pages dev .
 ```
 
 Luego abre http://localhost:8000 en tu navegador.

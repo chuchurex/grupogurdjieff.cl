@@ -58,15 +58,6 @@ El sitio presenta información sobre:
 
 ## Configuración de Cloudflare
 
-### Variables de Entorno Necesarias
-
-```
-CLOUDFLARE_ACCOUNT_ID=
-CLOUDFLARE_API_TOKEN=
-```
-
-Ver archivo `.env.example` para más detalles.
-
 ### Configuración de Pages
 
 - **Project Name:** grupogurdjieff-cl
@@ -85,18 +76,12 @@ Ver archivo `.env.example` para más detalles.
 
 # Opción 2: Python
 python3 -m http.server 8000
-
-# Opción 3: Wrangler
-npm run dev
 ```
 
 ### Despliegue
 
 ```bash
-# Despliegue manual
-npm run deploy
-
-# Despliegue automático
+# Despliegue automático vía GitHub
 git push origin main
 ```
 
@@ -116,10 +101,7 @@ git push origin main
 
 ## Archivos de Configuración
 
-- `.env` - Variables de entorno (NO incluir en git)
-- `.env.example` - Plantilla de variables de entorno
-- `wrangler.toml` - Configuración de Cloudflare
-- `package.json` - Dependencias y scripts
+- `package.json` - Scripts de desarrollo
 - `.gitignore` - Archivos ignorados por git
 
 ## Documentación
@@ -160,8 +142,6 @@ tar -czf grupogurdjieff.cl-backup-$(date +%Y%m%d).tar.gz grupogurdjieff.cl/
 - Usuario: chuchurex
 
 ### Cloudflare
-- Account ID: (ver archivo .env)
-- API Token: (ver archivo .env)
 - Dashboard: https://dash.cloudflare.com
 
 ## Notas Importantes
@@ -174,9 +154,7 @@ tar -czf grupogurdjieff.cl-backup-$(date +%Y%m%d).tar.gz grupogurdjieff.cl/
 
 ## Próximos Pasos
 
-- [ ] Obtener credenciales de Cloudflare
-- [ ] Configurar archivo .env
-- [ ] Hacer push al repositorio de GitHub
+- [x] Hacer push al repositorio de GitHub
 - [ ] Conectar repositorio a Cloudflare Pages
 - [ ] Configurar dominio personalizado
 - [ ] Verificar funcionamiento del sitio
